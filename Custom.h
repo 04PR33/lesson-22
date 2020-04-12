@@ -10,6 +10,12 @@ public:
 	Custom(string description, Date date, Time_ time);
 	~Custom();
 
-	string toString();
+	string getDescription();
+	void setDescription(string description);
+
+
+	virtual void show();
+	virtual string type();
+	virtual string toString();
 };
 
