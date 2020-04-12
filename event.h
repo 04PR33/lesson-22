@@ -17,10 +17,15 @@ public:
 	void set_Date(Date d);
 	void set_Time(Time_ t);
 
+	virtual void show() = 0;
+	virtual string type() = 0;
+	virtual string toString() = 0;
+
 	bool operator <(const Event& obj)const&;
 	bool operator >(const Event& obj)const&;
 	bool operator ==(const Event& obj)const&;
 	bool operator <=(const Event& obj)const&;
 	bool operator >=(const Event& obj)const&;
-	
+	bool operator !=(const Event& obj)const&;
+
 };

@@ -61,3 +61,8 @@ bool Event::operator>=(const Event & obj) const &
 {
 	return (*(this) > obj || *(this) == obj);
 }
+
+bool Event::operator!=(const Event & obj) const &
+{
+	return !(this->date == obj.date && this->time == obj.time);
+}
