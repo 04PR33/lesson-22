@@ -2,7 +2,7 @@
 #include "event.h"
 #include <string>
 using namespace std;
-
+//Meeting 
 
 class Meeting :
 	public Event
