@@ -9,7 +9,8 @@ public:
 	Custom();
 	Custom(string description, Date date, Time_ time);
 	~Custom();
-
+	void setdescription(string description);
+	string getdescription();
 	string toString();
 };
 
