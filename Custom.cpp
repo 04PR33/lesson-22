@@ -38,6 +38,7 @@ void Custom::show()
 string Custom::type()
 {
 	return "Custom";
+
 }
 string Custom::toString()
 {
