@@ -9,5 +9,7 @@ public:
 	Custom();
 	Custom(string description, Date date, Time_ time);
 	~Custom();
+
+	string toString();
 };
 
