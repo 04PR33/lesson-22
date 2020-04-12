@@ -16,4 +16,11 @@ public:
 
 	void set_Date(Date d);
 	void set_Time(Time_ t);
+
+	bool operator <(const Event& obj)const&;
+	bool operator >(const Event& obj)const&;
+	bool operator ==(const Event& obj)const&;
+	bool operator <=(const Event& obj)const&;
+	bool operator >=(const Event& obj)const&;
+	
 };
