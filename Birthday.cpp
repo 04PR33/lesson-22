@@ -57,3 +57,30 @@ void Birthday::Show()
 	cout << endl << "Время: "; get_Time();
 	cout << endl;
 }
+
+string Birthday::toString()
+{
+	char buffer[10];
+	itoa(date.getDay(), buffer, 10);
+	char buffer1[10];
+	itoa(date.getMonth(), buffer1, 10);
+	char buffer2[10];
+	itoa(date.getYear(), buffer, 10);
+	string s = "Дата: ";
+	s += date.getDay() + " ";
+	s += date.getMonth() + " ";
+	s += date.getYear() + " ";
+	s += "Время: ";
+	s+= time.getHour();
+	s += time.getMinutes() + " ";
+	s += time.getSeconds() + " ";
+	s += "hero: "+hero;
+	s += "place: " + place;
+	s += age;
+	return  s;
+}
+
+string Birthday::type()
+{
+	return "Birthday";
+}

@@ -28,5 +28,7 @@ public:
 	void set_Age(int a);
 
 	void Show();
+	string toString();
+	string type();
 };
 
