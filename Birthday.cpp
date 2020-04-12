@@ -8,10 +8,13 @@ Birthday::Birthday()
 	this->time = Time_(0, 0, 0, "utf"); //Время не надо (это ДЕНЬ рождения)
 }
 
-Birthday::Birthday(Date d)
+Birthday::Birthday(Date d, int age, string hero, string place)
 {
 	this->date = d;
 	this->time = Time_(0, 0, 0, "utf"); //Время не надо (это ДЕНЬ рождения)
+	this->age = age;
+	this->hero = hero;
+	this->place = place;
 }
 
 Birthday::~Birthday()

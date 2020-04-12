@@ -16,7 +16,7 @@ protected:
 
 public:
 	Birthday();
-	Birthday(Date d);
+	Birthday(Date d, int age, string hero, string place);
 	~Birthday();
 
 	string get_Hero();
