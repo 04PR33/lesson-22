@@ -24,6 +24,7 @@ public:
 		
 	virtual void show();
 	virtual string type();
+string toString();
 
 };
 

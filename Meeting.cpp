@@ -52,3 +52,9 @@ string Meeting::type()
 {
 	return "Meeting";
 }
+string Meeting::toString()
+{
+	return "{date:" + to_string(date.getDay()) + " " + to_string(date.getMonth()) + " " + to_string(date.getYear()) +
+		"; time:" + to_string(time.getHour()) + " " + to_string(time.getMinutes()) + " " + to_string(time.getSeconds()) +
+		"; person:" + getperson() + "; place:" + getplace(); "}";
+}
